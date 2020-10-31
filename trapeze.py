@@ -46,7 +46,7 @@ print(Integrale)
 print("Valeur Réelle de l'intégrale: '")
 res, err = quad(sin, 0,pi)
 print(res)
-print("erreur: ",err)
+print("erreur: ", abs(Integrale-res))
 
 #Test avec la fonction exponentielle
 Integrale = trapeze(N,0,7,exponentielle)
@@ -55,5 +55,5 @@ print(Integrale)
 print("Valeur Réelle de l'intégrale: '")
 res, err = quad(exponentielle, 0,pi)
 print(res)
-print("erreur: ",err)
+print("erreur: ", abs(Integrale-res))
 #plus on augmente N, plus la valeur approximée se rapproche de la valeur réelle de l'integrale

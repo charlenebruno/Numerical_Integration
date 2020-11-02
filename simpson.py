@@ -53,7 +53,7 @@ Integrale = trapeze(N,0,7,exponentielle)
 print("Valeur intégrale approximée par la méthode de Simpson pour exponentielle: ")
 print(Integrale)
 print("Valeur Réelle de l'intégrale: ")
-res, err = quad(exponentielle, 0,pi)
+res, err = quad(exponentielle, 0,7)
 print(res)
 print("erreur: ", abs(Integrale-res))
 #plus on augmente N, plus la valeur approximée se rapproche de la valeur réelle de l'integrale
